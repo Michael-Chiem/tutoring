@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Intervals</h1>
+    <div id="intervals"> </div>
+
+    <h2 id="hello1"></h2>
+    <div id="hello2"></div>
+
+
+<script>
+
+
+//console.log(document.getElementById('hello').innerText);
+document.getElementById('hello1').textContent =`my world`
+document.getElementById('hello2').innerHTML =`<h2>my world<h2>`
+
+const myInterval = setInterval(
+
+function(){
+document.getElementById('intervals').innerHTML += "hellow world"
+
+},  
+
+1000
+
+)
+
+setTimeout(
+
+function(){
+    clearInterval(myInterval)
+},
+
+5000
+
+)
+
+</script>
+
+</body>
+</html>

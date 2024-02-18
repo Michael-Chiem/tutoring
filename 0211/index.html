@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+        <h4>Time:<span id="time"></span> </h4>
+        <button style="height:20px" id="highScores">High Score</button>
+    </div>
+    
+    <div style="text-align: center;">
+        <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div style="text-align: center;">
+        
+        <div id="showHighScore"></div>
+
+    
+        <button id="reloadBtn" style="display:none; margin: auto;">Do the Quiz Again</button>
+
+
+    </div>
+
+    <div id="questions"></div>
+    <div id="answers"></div>
+    <div id="input" style="display:none">
+        <h3>You have completed the quiz!</h3>
+        <label>Your Initials</label>
+        <input id="initials" type="text"></input>
+        <button id="submitBtn">Submit</button>
+    </div>
+
+    <div id="score" style="display:none">
+
+        <div id="yourScores"></div>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
